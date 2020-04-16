@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Us</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 23.5px;
+  text-decoration: none;
+  width: auto;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #6666ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  background-image: url('cover.png');
+  background-size: 100% 100%;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  height: 350px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1500px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 1500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  align: bottom;
+  padding: 20px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+  position: 'absolute',
+  bottom:0
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="web.html">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a class="active" href="#about">About</a></li>
+</ul>
+
+<header>
+  <h2></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li style="width: 226px;"><a href="#">Corona Virus LIVE Count</a></li>
+      <li style="width: 226px;"><a href="#">Need Food?</a></li><br>
+      <li style="width: 226px;"><a href="#">Raise Complaint</a></li><br>
+      <li style="width: 226px;"><a href="#">Donate For PM Cares Fund </a></li>
+      <li style="width: 226px;"><a href="#">Volunteer with NGO</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+
+  <h1> About Us </h1>
+  <br>
+  <br>
+  <p> This is a Website which can be used by people to submit their request in case if they are in need of food and other essential items. Due to high traffic on government emergency numbers, many people are unable to contact the police/officials. Hence, people can fill the requirements form and the food will be delivered at their doorstep. Also, there are many people who want to donate some money to the PM Cares Fund, they can also use the bank details mentioned on the website.
+</p>
+
+<br> 
+ <p>
+If people want to locally help the government officials in any type of work like distributing food and other related stuff, then they are welcomed to fill the Volunteer form.
+</p>
+<br>
+
+<p>
+During the Covid 19 spread, there are many people who does not follow the proper guidlines and create voilance. The complaints can be registered on this website and strict actions will be taken against them.
+
+
+  </article>
+</section>
+
+<footer>
+  <p>Website Created by Coding Demons</p>
+</footer>
+
+</body>
+</html>
