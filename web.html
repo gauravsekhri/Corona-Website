@@ -6,16 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-div {
-  background-color: lightgrey;
-  width: 120px;
-   
-  border: 15px solid green;
-  padding: 10px;
-  margin: 20px;
-}
-
-/*---------------*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -32,8 +22,9 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 23.5px;
   text-decoration: none;
+  width: auto;
 }
 
 li a:hover:not(.active) {
@@ -43,9 +34,6 @@ li a:hover:not(.active) {
 .active {
   background-color: #6666ff;
 }
-
-/*---------------*/
-
 
 * {
   box-sizing: border-box;
@@ -58,17 +46,20 @@ body {
 /* Style the header */
 header {
   background-color: #666;
+  background-image: url('cover.png');
+  background-size: 100% 100%;
   padding: 30px;
   text-align: center;
   font-size: 35px;
   color: white;
+  height: 350px;
 }
 
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
   width: 20%;
-  height: 800px; /* only for demonstration, should be removed */
+  height: 1500px; /* only for demonstration, should be removed */
   background: #ccc;
   padding: 20px;
 }
@@ -82,10 +73,10 @@ nav ul {
 
 article {
   float: left;
-  padding: 20px;
-  width: 70%;
+  padding: 10px;
+  width: 80%;
   background-color: #f1f1f1;
-  height: 800px; /* only for demonstration, should be removed */
+  height: 1500px; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
@@ -110,77 +101,130 @@ footer {
     height: auto;
   }
 }
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 94%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  margin: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  align: bottom;
+  padding: 20px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+  position: 'absolute',
+  bottom:0
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 </style>
 </head>
 <body>
 
 <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
+  <li><a class="active" href="web.html">Home</a></li>
+  <li><a href="https://timesofindia.indiatimes.com/india/coronavirus-in-india-live-news-updates-total-number-of-corona-cases-crosses-12000/liveblog/75170467.cms">News</a></li>
   <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+  <li><a href="aboutcheck.html">About</a></li>
 </ul>
 
 <header>
-  <h2> Fight Against Corona Virus </h2>
+  <h2></h2>
 </header>
 
 <section>
   <nav>
     <ul>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
+      <li style="width: 226px;"><a href="http://covidindia.org/">Corona Virus LIVE Count</a></li>
+      <li style="width: 226px;"><a href="#">Need Food?</a></li><br>
+      <li style="width: 226px;"><a href="#">Raise Complaint</a></li><br>
+      <li style="width: 226px;"><a href="https://pib.gov.in/PressReleseDetailm.aspx?PRID=1608851">Donate For PM Cares Fund </a></li>
+      <li style="width: 226px;"><a href="f.html">Volunteer with NGO</a></li>
     </ul>
   </nav>
   
   <article>
- */ code1 by Digital Ranjan >>>>>Start*/
-  <div>
-  <center><h1>Volunteer Registration</h1></center>
-  	<form method="post" action="#"  onSubmit="return validateForm();">
-<div style="width: 400px;">
-</div>
-<div style="padding-bottom: 18px;font-size : 24px;">Volunteer Registration</div>
-<div style="display: flex; padding-bottom: 18px;width : 450px;">
-<div style=" margin-left : 0; margin-right : 1%; width : 49%;">First name<span style="color: red;"> *</span><br/>
-<input type="text" id="data_2" name="data_2" style="width: 100%;" class="form-control"/>
-</div>
-<div style=" margin-left : 1%; margin-right : 0; width : 49%;">Last name<span style="color: red;"> *</span><br/>
-<input type="text" id="data_3" name="data_3" style="width: 100%;" class="form-control"/>
-</div>
-</div><div style="padding-bottom: 18px;">Email<br/>
-<input type="text" id="data_4" name="data_4" style="width : 450px;" class="form-control"/>
-</div>
-<div style="padding-bottom: 18px;">Phone<br/>
-<input type="text" id="data_5" name="data_5" style="width : 250px;" class="form-control"/>
-</div>
-<div style="padding-bottom: 18px;">Mobile phone<br/>
-<input type="text" id="data_6" name="data_6" style="width : 250px;" class="form-control"/>
-</div>
-<div style="padding-bottom: 18px;">What can you help with?<br/>
-<span><input type="checkbox" id="data_7_0" name="data_7" value="#"/> Delivering food</span><br/>
-<span><input type="checkbox" id="data_7_1" name="data_7" value="#"/> mask distribution</span><br/>
-<span><input type="checkbox" id="data_7_2" name="data_7" value="Entering data#"/> Entering data</span><br/>
-<span><input type="checkbox" id="data_7_3" name="data_7" value="Public relations"/> Public relations</span><br/>
-<span><input type="checkbox" id="data_7_4" name="data_7" value="Door-to-door"/> Door-to-door</span><br/>
-<span><input type="checkbox" id="data_7_5" name="data_7" value="Clerical work"/> Clerical work</span><br/>
-</div>
-<div style="padding-bottom: 18px;">Why do you want to join our campaign?<br/>
-<textarea id="data_8" false name="data_8" style="width : 450px;" rows="6" class="form-control"></textarea>
-</div>
-<div style="padding-bottom: 18px;"><br/>
-<span><input type="checkbox" id="data_9_0" name="data_9" value="Sign me up to supporter email list"/> Sign me up to supporter email list</span><br/>
-</div>
-<div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
-</form>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Help</h2>
+    <p>Fill the form if you want help</p>
+    <br><br><br><br><br><br>
+    <button class="button" style="vertical-align:middle"><span>Need Food ?     </span></button>
+
   </div>
- */ code1 by Digital Ranjan >>>>>end*/
+  <div class="column" style="background-color:#bbb; background-image: url('complaint.png'); background-size: 100% 100%;">
+<h1>.</h1>
+<p>. </p>
+    <br><br><br><br><br><br>
+    <button class="button" VerticalOptions="End"><span>Raise Complaint     </span></button>
+  </div>
+
+  <div class="column" style="background-color:#aaa;">
+    <h2>Donate</h2>
+    <p>Fill the form if you want to PM Cares Fund</p>
+    <br><br><br><br><br><br>
+    <button class="button" style="vertical-align:middle" onclick="window.location.href = 'https://pib.gov.in/PressReleseDetailm.aspx?PRID=1608851';"><span>Donate for PM Cares Fund     </span></button>
+  </div>
+
+  <div class="column" style="background-color:#ccc;">
+    <h2>Volunteer for Nation</h2>
+    <p>If you want to help the government then register with us.</p>
+    <br><br><br><br><br><br>
+    <button class="button" style="vertical-align:middle" onclick="location.href='f.html';"><span>Volunteer     </span></button>
+  </div>
+</div>
+
+
   </article>
 </section>
 
 <footer>
-  <p>Footer</p>
+  <p>Website Created by Coding Demons</p>
 </footer>
 
 </body>
