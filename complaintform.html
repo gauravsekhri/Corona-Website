@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Complaints Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=email], select {
+  width: 49%;
+  font-size:20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 49%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<center><h1> Complaints Form </h1>
+
+<form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+ 
+<input id="nameField" name="entry.186075346" placeholder="Enter your Full Name" type="text" required> <br>
+<input id="mobField" name="entry.603878983" placeholder="Enter your Phone Number" type="text" pattern="^\d{10}$" required> <br>
+<input id="istateField" name="entry.355804022" placeholder="State of Incident" type="text" required> <br>
+<input id="dateField" name="entry.1976690839" placeholder="Date of Incident" type="text" required> <br>
+<input id="npeopleField" name="entry.1172784087" placeholder="Number of People Involved" type="text" required> <br>
+<input id="describeField" name="entry.1139647545" placeholder="Describe the Incident" type="text"> <br>
+
+<!--
+<option value="">Why wanTED Talks Youtube Channel?</option>
+<option value="City: Delhi, Cinema: PVR Logix City Centre IMAX, Noida">Time Saving Fast Track Tutorials</option>
+<option value="City:Bengaluru  Cinema:Cinepolis IMAX Forum Shantiniketan">Provide Code for reference</option>
+<option value="City:Chennai Cinema:SPI Palazo The Forum Vijaya Mall, Vadapalani">Instant Replies of Comments</option>
+<option value="City:Pune Cinema:Cinepolis Westend Mall, Pune">Latest Code Updates</option> 
+-->
+
+</select> 
+<button id="send" type="submit" class="appsMaterialWizButtonPaperbuttonLabel quantumWizButtonPaperbuttonLabel exportLabel">Submit</button>
+</form>
+</center>
+
+<h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none;"> 
+Your Complaint has been successfuly registered! 
+</h3>
+
+
+
+<img src="wan.jpg" style="width:100%; opacity:.4;">
+
+
+
+
+<script>
+function postToGoogle() {
+                var field1 = $("#nameField").val();
+                var field2 = $("#mobField").val();
+                var field3 = $("#istateField").val();
+                var field4 = $("#dateField").val();
+		var field5 = $("#npeopleField").val();
+		var field6 = $("#describeField").val();
+ 				
+				if(field1 == ""){
+					alert('Please Fill Your Name');
+					document.getElementById("nameField").focus();
+					return false;
+				}
+				if(field2 == "" || field2.length > 10 || field2.length < 10){
+					alert('Please Fill Your Mobile Number');
+					document.getElementById("mobField").focus();
+					return false;
+				}
+				if(field3 == ""){
+					alert('Please Fill Your State');
+					document.getElementById("istateField").focus();
+					return false;
+				}
+				if(field4 == ""){
+					alert('Please Fill the Date');
+					document.getElementById("dateField").focus();
+					return false;
+				}
+				if(field5 == ""){
+					alert('Please Fill the Date');
+					document.getElementById("npeopleField").focus();
+					return false;
+				}
+				if(field6 == ""){
+					alert('Please Describe the incident');
+					document.getElementById("describeField").focus();
+					return false;
+				}
+
+
+				
+	
+                $.ajax({
+                    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLScXa5z2fN8EkLnNhT7IhntHpq8eBRJl4pUMtlMqx58dpntaIw/formResponse?",
+					data: {"entry.186075346": field1, "entry.603878983": field2, "entry.355804022": field3, "entry.1976690839": field4, "entry.1172784087": field5, "entry.1139647545": field6},
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+					{
+					},
+					error: function(x, y, z)
+						{
+
+							$('#success-msg').show();
+							$('#form').hide();
+							
+						}
+                });
+				return false;
+            }
+</script>
+</body>
+</html>
