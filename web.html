@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Covid India Fight</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<title>
+  Covid India Fight
+  
+</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -53,6 +57,8 @@ header {
   font-size: 35px;
   color: white;
   height: 350px;
+  cursor: pointer;
+  onclick: window.location.href = 'web.html';
 }
 
 /* Create two columns/boxes that floats next to each other */
@@ -88,7 +94,7 @@ section:after {
 
 /* Style the footer */
 footer {
-  background-color: #777;
+  background-color: #666;
   padding: 10px;
   text-align: center;
   color: white;
@@ -126,9 +132,9 @@ footer {
   color: #FFFFFF;
   text-align: center;
   font-size: 28px;
-  align: bottom;
-  padding: 20px;
-  width: 100%;
+  align: center;
+  padding: 10px;
+  width: 97%;
   transition: all 0.5s;
   cursor: pointer;
   
@@ -161,6 +167,8 @@ footer {
   right: 0;
 }
 
+
+
 </style>
 </head>
 <body>
@@ -168,7 +176,7 @@ footer {
 <ul>
   <li><a class="active" href="web.html">Home</a></li>
   <li><a href="https://timesofindia.indiatimes.com/india/coronavirus-in-india-live-news-updates-total-number-of-corona-cases-crosses-12000/liveblog/75170467.cms">News</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="contact.html">Contact</a></li>
   <li><a href="aboutcheck.html">About</a></li>
 </ul>
 
@@ -185,37 +193,53 @@ footer {
       <li style="width: 226px;"><a href="https://pib.gov.in/PressReleseDetailm.aspx?PRID=1608851">Donate For PM Cares Fund </a></li>
       <li style="width: 226px;"><a href="f.html">Volunteer with NGO</a></li>
     </ul>
+      <br>
+      <br>
+      <br>
+      <br>
+    <Center>
+      <p>Know more about Corona Virus</p>
+      <img src="covidinfo.png" alt="QR Code" width="200" height="200" style="cursor: pointer;" onclick="window.location.href = 'https://www.cnn.com/2020/01/20/health/what-is-coronavirus-explained/index.html';">
+	</center>
   </nav>
   
- <article>
+  <article>
 
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Help</h2>
-    <p>Fill the form if you want help</p>
-    <br><br><br><br><br><br>
-    <button class="button" style="vertical-align:middle" onclick="location.href='foodform.html';"><span>Need Food ? </span></button>
+  <div class="column" style="background-color:#aaa; background-image: url('foodpic.png'); background-size: 100% 100%;">
+    <h2>.</h2>
+    <p.Fill the form if you want help</p>
+    <br><br><br><br><br><br><br><br>
+    <center>
+    <button class="button" style="vertical-align:middle; padding: 17px;" onclick="location.href='foodform.html';"><span>Need Food ? </span></button>
+    </center>
   </div>
 
   <div class="column" style="background-color:#bbb; background-image: url('complaint.png'); background-size: 100% 100%;">
     <h1>.</h1>
     <p>. </p>
-    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <center>
     <button class="button" style="vertical-align:middle" onclick="location.href='complaintform.html';"><span>Raise Complaint</span></button>
+    </center>
   </div>
 
-  <div class="column" style="background-color:#aaa;">
-    <h2>Donate</h2>
-    <p>Fill the form if you want to PM Cares Fund</p>
+  <div class="column" style="background-color:#aaa; background-image: url('donatepic.png'); background-size: 100% 100%;">
+    <h2>.</h2>
+    <p>.</p>
     <br><br><br><br><br><br>
-    <button class="button" style="vertical-align:middle" onclick="window.location.href = 'https://pib.gov.in/PressReleseDetailm.aspx?PRID=1608851';"><span>Donate for PM Cares Fund     </span></button>
+    <center>
+    <button class="button" style="vertical-align:middle; padding: 20px;" onclick="window.location.href = 'https://pib.gov.in/PressReleseDetailm.aspx?PRID=1608851';"><span>Donate for PM Cares Fund     </span></button>
+    </center>
   </div>
 
-  <div class="column" style="background-color:#ccc;">
-    <h2>Volunteer for Nation</h2>
-    <p>If you want to help the government then register with us.</p>
-    <br><br><br><br><br><br>
-    <button class="button" style="vertical-align:middle" onclick="location.href='f.html';"><span>Volunteer </span></button>
+  <div class="column" style="background-color:#ccc; background-image: url('volpic.png'); background-size: 100% 100%;">
+    <h2>.</h2>
+    <p>.</p>
+    <br><br><br><br><br><br><br>
+    <center>
+    <button class="button" style="vertical-align:middle; padding: 3px;" onclick="location.href='f.html';"><span>Volunteer </span></button>
+    </center>
   </div>
 </div>
 
@@ -224,8 +248,9 @@ footer {
 </section>
 
 <footer>
-  <p>Website Created by Team Coding Demons</p>
+  <p>Website Created by Coding Demons</p>
+  <p><b><i><a href="backend.html" target="_blank" style="color: black;">See Backend</a><i></b></p>
 </footer>
 
 </body>
-</html> 
+</html>
