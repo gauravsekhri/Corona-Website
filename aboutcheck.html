@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>About Us</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<title>
+  Covid India Fight
+  
+</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -53,6 +57,8 @@ header {
   font-size: 35px;
   color: white;
   height: 350px;
+  cursor: pointer;
+  onclick: window.location.href = 'web.html';
 }
 
 /* Create two columns/boxes that floats next to each other */
@@ -88,7 +94,7 @@ section:after {
 
 /* Style the footer */
 footer {
-  background-color: #777;
+  background-color: #666;
   padding: 10px;
   text-align: center;
   color: white;
@@ -102,6 +108,22 @@ footer {
   }
 }
 
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 94%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  margin: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -110,9 +132,9 @@ footer {
   color: #FFFFFF;
   text-align: center;
   font-size: 28px;
-  align: bottom;
-  padding: 20px;
-  width: 100%;
+  align: center;
+  padding: 10px;
+  width: 97%;
   transition: all 0.5s;
   cursor: pointer;
   
@@ -145,15 +167,17 @@ footer {
   right: 0;
 }
 
+
+
 </style>
 </head>
 <body>
 
 <ul>
   <li><a href="web.html">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a class="active" href="#about">About</a></li>
+  <li><a href="https://timesofindia.indiatimes.com/india/coronavirus-in-india-live-news-updates-total-number-of-corona-cases-crosses-12000/liveblog/75170467.cms">News</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a class="active" href="aboutcheck.html">About</a></li>
 </ul>
 
 <header>
@@ -163,37 +187,46 @@ footer {
 <section>
   <nav>
     <ul>
-      <li style="width: 226px;"><a href="#">Corona Virus LIVE Count</a></li>
-      <li style="width: 226px;"><a href="#">Need Food?</a></li><br>
-      <li style="width: 226px;"><a href="#">Raise Complaint</a></li><br>
-      <li style="width: 226px;"><a href="#">Donate For PM Cares Fund </a></li>
-      <li style="width: 226px;"><a href="#">Volunteer with NGO</a></li>
+      <li style="width: 226px;"><a href="http://covidindia.org/">Corona Virus LIVE Count</a></li>
+      <li style="width: 226px;"><a href="foodform.html">Need Food?</a></li><br>
+      <li style="width: 226px;"><a href="complaintform.html">Raise Complaint</a></li><br>
+      <li style="width: 226px;"><a href="https://pib.gov.in/PressReleseDetailm.aspx?PRID=1608851">Donate For PM Cares Fund </a></li>
+      <li style="width: 226px;"><a href="f.html">Volunteer with NGO</a></li>
     </ul>
+      <br>
+      <br>
+      <br>
+      <br>
+    <Center>
+      <p>Know more about Corona Virus</p>
+      <img src="covidinfo.png" alt="QR Code" width="200" height="200" style="cursor: pointer;" onclick="window.location.href = 'https://www.cnn.com/2020/01/20/health/what-is-coronavirus-explained/index.html';">
+	</center>
   </nav>
   
   <article>
 
-  <h1> About Us </h1>
+  <h1 style="margin: 20px"> About Us </h1>
   <br>
   <br>
-  <p> This is a Website which can be used by people to submit their request in case if they are in need of food and other essential items. Due to high traffic on government emergency numbers, many people are unable to contact the police/officials. Hence, people can fill the requirements form and the food will be delivered at their doorstep. Also, there are many people who want to donate some money to the PM Cares Fund, they can also use the bank details mentioned on the website.
+  <p style="margin: 20px"> This is a Website which can be used by people to submit their request in case if they are in need of food and other essential items. Due to high traffic on government emergency numbers, many people are unable to contact the police/officials. Hence, people can fill the requirements form and the food will be delivered at their doorstep. Also, there are many people who want to donate some money to the PM Cares Fund, they can also use the bank details mentioned on the website.
 </p>
 
 <br> 
- <p>
+ <p style="margin: 20px">
 If people want to locally help the government officials in any type of work like distributing food and other related stuff, then they are welcomed to fill the Volunteer form.
 </p>
 <br>
 
-<p>
+<p style="margin: 20px">
 During the Covid 19 spread, there are many people who does not follow the proper guidlines and create voilance. The complaints can be registered on this website and strict actions will be taken against them.
-
+</p>
 
   </article>
 </section>
 
 <footer>
   <p>Website Created by Coding Demons</p>
+  <p><b><i><a href="backend.html" target="_blank" style="color: black;">See Backend</a><i></b></p>
 </footer>
 
 </body>
