@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="favicon.ico" />
+<title>
+  Covid India Fight
+  
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 23.5px;
+  text-decoration: none;
+  width: auto;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #6666ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  background-image: url('cover.png');
+  background-size: 100% 100%;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  height: 350px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1500px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 1500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 94%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  margin: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #00b300;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  align: center;
+  padding: 10px;
+  width: 50%;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+  position: 'absolute',
+  bottom:0
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="web.html">Home</a></li>
+  <li><a href="https://timesofindia.indiatimes.com/india/coronavirus-in-india-live-news-updates-total-number-of-corona-cases-crosses-12000/liveblog/75170467.cms">News</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="aboutcheck.html">About</a></li>
+</ul>
+
+<header>
+  <h2></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li style="width: 226px;"><a href="http://covidindia.org/">Corona Virus LIVE Count</a></li>
+      <li style="width: 226px;"><a href="foodform.html">Need Food?</a></li><br>
+      <li style="width: 226px;"><a href="complaintform.html">Raise Complaint</a></li><br>
+      <li style="width: 226px;"><a href="https://pib.gov.in/PressReleseDetailm.aspx?PRID=1608851">Donate For PM Cares Fund </a></li>
+      <li style="width: 226px;"><a href="f.html">Volunteer with NGO</a></li>
+    </ul>
+      <br>
+      <br>
+      <br>
+      <br>
+    <Center>
+      <p>Know more about Corona Virus</p>
+      <img src="covidinfo.png" alt="QR Code" width="200" height="200" style="cursor: pointer;" onclick="window.location.href = 'https://www.cnn.com/2020/01/20/health/what-is-coronavirus-explained/index.html';">
+	</center>
+  </nav>
+  
+  <article>
+<br>
+    <center>
+    <button class="button" style="vertical-align:middle; padding: 20px;" onclick="window.location.href = 'https://docs.google.com/spreadsheets/d/15BFPUPi0QW43Wi23P-QzgLbhrqyBPTpH1fnG5NH6GDk/edit?usp=sharing';"><span>View Food Requestes </span></button>
+
+    <br>
+    <br>
+
+    <button class="button" style="vertical-align:middle; padding: 20px;" onclick="window.location.href = 'https://docs.google.com/spreadsheets/d/1avfBGzGBH0d3pSHlvxPrz1k1CwyMbMcwPyzfHHZP2BE/edit?usp=sharing';"><span>View Registered Complaints </span></button>
+
+    <br>
+    <br>
+
+    <button class="button" style="vertical-align:middle; padding: 20px;" onclick="window.location.href = 'https://docs.google.com/spreadsheets/d/185TCeePTxLc3eWfFq-RDLhAczfvR5I4MqtbnToFLTHU/edit?usp=sharing';"><span>View Volunteer's List </span></button>
+    </center>
+  </div>
+
+
+
+  </article>
+</section>
+
+<footer>
+  <p>Website Created by Coding Demons</p>
+  <p><b><i><a href="backend.html" target="_blank" style="color: black;">See Backend</a><i></b></p>
+</footer>
+
+</body>
+</html>

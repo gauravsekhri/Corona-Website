@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="favicon.ico" />
+<title>
+  Covid India Fight
+  
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 23.5px;
+  text-decoration: none;
+  width: auto;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #6666ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  background-image: url('cover.png');
+  background-size: 100% 100%;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  height: 350px;
+  cursor: pointer;
+  onclick: window.location.href = 'web.html';
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1500px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 1500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 94%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  margin: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  align: center;
+  padding: 10px;
+  width: 97%;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+  position: 'absolute',
+  bottom:0
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ccc;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="web.html">Home</a></li>
+  <li><a href="https://timesofindia.indiatimes.com/india/coronavirus-in-india-live-news-updates-total-number-of-corona-cases-crosses-12000/liveblog/75170467.cms">News</a></li>
+  <li><a class="active" href="contact.html">Contact</a></li>
+  <li><a href="aboutcheck.html">About</a></li>
+</ul>
+
+<header>
+  <h2></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li style="width: 226px;"><a href="http://covidindia.org/">Corona Virus LIVE Count</a></li>
+      <li style="width: 226px;"><a href="foodform.html">Need Food?</a></li><br>
+      <li style="width: 226px;"><a href="complaintform.html">Raise Complaint</a></li><br>
+      <li style="width: 226px;"><a href="https://pib.gov.in/PressReleseDetailm.aspx?PRID=1608851">Donate For PM Cares Fund </a></li>
+      <li style="width: 226px;"><a href="f.html">Volunteer with NGO</a></li>
+    </ul>
+      <br>
+      <br>
+      <br>
+      <br>
+    <Center>
+      <p>Know more about Corona Virus</p>
+      <img src="covidinfo.png" alt="QR Code" width="200" height="200" style="cursor: pointer;" onclick="window.location.href = 'https://www.cnn.com/2020/01/20/health/what-is-coronavirus-explained/index.html';">
+	</center>
+  </nav>
+  
+  <article>
+
+<center>
+<br>
+<h1 style="font-family:verdana;">State wise Helpline Numbers</h1>
+<br>
+<br>
+<table>
+  <tr>
+    <th>S.No</th>
+    <th>State</th>
+    <th>Helpline Number</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Andhra Pradesh</td>
+    <td>0866-2410978</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Arunachal Pradesh</td>
+    <td>9436055743</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Assam</td>
+    <td>6913347770</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Bihar</td>
+    <td>104</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Chhattisgarh</td>
+    <td>077122-35091</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Goa</td>
+    <td>104</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Gujarat</td>
+    <td>104</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Haryana</td>
+    <td>8558893911</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Himachal Pradesh</td>
+    <td>104</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Jharkhand</td>
+    <td>104</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Karnataka</td>
+    <td>104,  080-46848600,  080-66692000</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Kerala</td>
+    <td>0471-2552056</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Madhya Pradesh</td>
+    <td>0755-2527177</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Maharashtra</td>
+    <td>020-26127394</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Manipur</td>
+    <td>3852411668</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Meghalaya</td>
+    <td>108</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Mizoram</td>
+    <td>102</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Nagaland</td>
+    <td>7005539653</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Odisha</td>
+    <td>9439994859</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Punjab</td>
+    <td>104</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Rajasthan</td>
+    <td>0141-2225624</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Sikkim</td>
+    <td>104</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>Tamil Nadu</td>
+    <td>044-29510500</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Telangana</td>
+    <td>104</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>Uttar Pradesh</td>
+    <td>18001805145</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>West Bengal</td>
+    <td>3323412600</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>Andaman and Nicobar Islands</td>
+    <td>03192-232102</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>Tripura</td>
+    <td>0381-2315879</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>Uttarakhand</td>
+    <td>104</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>Chandigarh</td>
+    <td>9779558282</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>Dadra and Nagar Haveli and Daman & Diu</td>
+    <td>104</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>Delhi</td>
+    <td>011-22307145</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>Jammu</td>
+    <td>01912520982</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>Kashmir</td>
+    <td>01942440283</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Ladakh</td>
+    <td>01982256462</td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Lakshadweep</td>
+    <td>104</td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>Puducherry</td>
+    <td>104</td>
+  </tr>
+</table>
+</center>
+
+  </article>
+</section>
+
+<footer>
+  <p>Website Created by Coding Demons</p>
+  <p><b><i><a href="backend.html" target="_blank" style="color: black;">See Backend</a><i></b></p>
+</footer>
+
+</body>
+</html>
